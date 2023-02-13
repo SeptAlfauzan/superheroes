@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun SuperHeroesApp() {
-    SuperheroesTheme(darkTheme = !isSystemInDarkTheme()) {
+    SuperheroesTheme(darkTheme = isSystemInDarkTheme()) {
         Scaffold(
           topBar = {
               TopBar()
